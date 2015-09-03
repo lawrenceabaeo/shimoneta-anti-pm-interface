@@ -1,8 +1,22 @@
+/***** Fonts *****/
 @font-face {
   font-family: 'Rajdhani-Regular';
+  // http://www.fontspace.com/indian-type-foundry/rajdhani
   src: url('../font/Rajdhani-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: "AGA-Rasheeq-Regular";
+  // http://www.whatfontis.com/AGA-Rasheeq-V2-14JB.font?text=ANTIPMR
+  src: url('../font/AGA-Rasheeq-Regular.ttf') format('truetype');
+}
+
+/******************************/
 #time {
   font-family: 'Rajdhani-Regular';
+}
+
+.device-label {
+  font-family: 'AGA-Rasheeq-Regular';
+  font-weight: 100;
 }
