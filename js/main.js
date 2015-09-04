@@ -117,7 +117,7 @@ $(document).ready(function() {
     minutes = minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
     centiseconds = centiseconds < 10 ? "0" + centiseconds : centiseconds;
-    $('#time').html(minutes + ':' + seconds + ':' + centiseconds);
+    $('.text-countdown-numbers').html(minutes + ':' + seconds + ':' + centiseconds);
   }
   
   // 'app' party starts here:

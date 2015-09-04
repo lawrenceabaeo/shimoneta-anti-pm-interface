@@ -8,14 +8,49 @@
   src: url("../font/AGA-Rasheeq-Regular.ttf") format("truetype"); }
 
 /******************************/
-/* line 15, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
-#time {
-  font-family: 'Rajdhani-Regular'; }
-
 /* line 19, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
-.device-label {
+.main-content-area {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 298px;
+  border: 1px solid red; }
+
+/* line 27, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+.header-area {
+  height: 45px;
+  border: 1px solid red; }
+
+/* line 32, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+.text-anti-pm {
   font-family: 'AGA-Rasheeq-Regular';
   font-weight: 100;
-  display: inline-block; }
+  display: inline; }
+
+/* line 38, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+.x-button {
+  height: 31px;
+  width: 35px; }
+
+/* line 43, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+.dark-gray-content-area {
+  margin-bottom: 15px;
+  margin-left: 4px;
+  margin-right: 4px;
+  height: 263px;
+  border: 1px solid red; }
+
+/* line 54, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+.text-countdown-numbers {
+  font-family: 'Rajdhani-Regular'; }
+
+/* line 58, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+.bottom-buttons-area {
+  height: 40px;
+  border: 1px solid red; }
+
+/* line 66, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+.ok-button {
+  width: 125px; }
 
 /*# sourceMappingURL=my-styles.css.map */

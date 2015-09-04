@@ -11,14 +11,58 @@
   src: url('../font/AGA-Rasheeq-Regular.ttf') format('truetype');
 }
 
+@mixin debug {
+  border: 1px solid red;
+}
+
 /******************************/
-#time {
+.main-content-area {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 298px;
+  @include debug; 
+}
+
+.header-area {
+  height: 45px;
+  @include debug;
+}
+
+.text-anti-pm {
+  font-family: 'AGA-Rasheeq-Regular';
+  font-weight: 100;
+  display: inline;
+}
+
+.x-button {
+  height: 31px;
+  width: 35px;
+}
+
+.dark-gray-content-area {
+  margin-bottom: 15px;
+  margin-left: 4px;
+  margin-right: 4px;
+  height: 263px;
+  @include debug;
+}
+
+.text-remaining-time {
+}
+
+.text-countdown-numbers {
   font-family: 'Rajdhani-Regular';
 }
 
-.device-label {
-  font-family: 'AGA-Rasheeq-Regular';
-  font-weight: 100;
-  display: inline-block;
+.bottom-buttons-area {
+  height: 40px;
+  @include debug;
 }
 
+.special-key-1 {
+}
+
+.ok-button {
+  width: 125px;
+}
