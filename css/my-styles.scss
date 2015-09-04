@@ -62,6 +62,7 @@ $overall-content-width: 298px;
 }
 
 .x-button {
+  border-radius: 1px;
   position: absolute;
   height: 31px;
   top: 17px;
@@ -126,30 +127,43 @@ $overall-content-width: 298px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3px;
-  @include debug;
+  padding-top: 0px;
+  
 }
 
 .my-keys {
+  border-radius: .25px;
   height: 100%;
   margin: 0px 0px;
+  vertical-align: middle;
 }
 
 .special-key-1, .special-key-3 { 
   width: 29%;
 }
 
+.special-key-1 {
+  // border-top-left-radius: 1px;
+}
+
+.special-key-3 {
+  // border-top-right-radius: 1px;
+}
+
 .ok-button {
-  width: 42%;
+  width: 42%; 
+  // border-bottom-left-radius: 1px;
 }
 
 .ok-button-text {
   font-family: "telegrama_render";
   display: inline-block;
+  
   // using font-size pushes the boundaries of the buttons 
   // that are to the left and right, will use transform instead
   
-  /** OK letters sizing and position**/
-  $yAxis-number: 2px;
+    /** OK letters sizing and position**/
+  $yAxis-number: 0px;
   $ok-letters-width: 2;
   $ok-letters-height: 1.50;
   transform: scale($ok-letters-width,
