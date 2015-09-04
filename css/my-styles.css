@@ -1,19 +1,15 @@
 /***** Fonts *****/
 @font-face {
-  font-family: 'Rajdhani-Regular';
-  src: url("../font/Rajdhani-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "AGA-Rasheeq-Regular";
-  src: url("../font/AGA-Rasheeq-Regular.ttf") format("truetype"); }
-
-@font-face {
   font-family: "OPTIEdgar-Extended";
   src: url("../font/OPTIEdgar-Extended.otf") format("opentype"); }
 
+@font-face {
+  font-family: "AUDIMRG_";
+  src: url("../font/AUDIMRG_.ttf") format("truetype"); }
+
 /***** SASS stuff *****/
 /******************************/
-/* line 27, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 20, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .main-content-area {
   margin-left: auto;
   margin-right: auto;
@@ -22,13 +18,13 @@
   width: 298px;
   border: 1px solid red; }
 
-/* line 36, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 29, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .header-area {
   height: 45px;
   text-align: left;
   border: 1px solid red; }
 
-/* line 42, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 35, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .wrap-text-anti-pm-area {
   display: inline-block;
   transform: scale(1, 1.2);
@@ -37,20 +33,20 @@
   -ms-transform: scale(1, 1.2);
   -o-transform: scale(1, 1.2); }
 
-/* line 57, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 50, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .text-anti-pm {
   display: inline-block;
   font-family: 'OPTIEdgar-Extended';
   font-size: 1.21em; }
 
-/* line 63, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 56, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .x-button {
   position: absolute;
   height: 31px;
   top: 17px;
   width: 35px; }
 
-/* line 70, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 63, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .dark-gray-content-area {
   margin-bottom: 15px;
   margin-left: 4px;
@@ -58,7 +54,7 @@
   height: 263px;
   border: 1px solid red; }
 
-/* line 78, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 71, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .red-orb {
   margin-left: 41px;
   margin-top: 28px;
@@ -68,25 +64,25 @@
   width: 205px;
   border: 1px solid red; }
 
-/* line 91, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 84, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .text-countdown-numbers {
-  font-family: 'Rajdhani-Regular'; }
+  font-family: 'AUDIMRG_'; }
 
-/* line 95, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 88, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .bottom-buttons-area {
   height: 40px;
   border: 1px solid red; }
 
-/* line 100, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 93, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .my-keys {
   height: 100%;
   margin: 0px 0px; }
 
-/* line 105, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 98, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .special-key-1, .special-key-3 {
   width: 29%; }
 
-/* line 109, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 102, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .ok-button {
   width: 42%; }
 
