@@ -132,7 +132,7 @@ $overall-content-width: 298px;
 }
 
 .my-keys {
-  border-radius: .25px;
+  border-radius: .1px;
   height: 100%;
   margin: 0px 0px;
   vertical-align: middle;
@@ -143,27 +143,23 @@ $overall-content-width: 298px;
 }
 
 .special-key-1 {
-  // border-top-left-radius: 1px;
 }
 
 .special-key-3 {
-  // border-top-right-radius: 1px;
 }
 
 .ok-button {
-  width: 42%; 
-  // border-bottom-left-radius: 1px;
+  width: 42%;
 }
 
 .ok-button-text {
   font-family: "telegrama_render";
   display: inline-block;
-  
   // using font-size pushes the boundaries of the buttons 
   // that are to the left and right, will use transform instead
   
     /** OK letters sizing and position**/
-  $yAxis-number: 0px;
+  $yAxis-number: 2px;
   $ok-letters-width: 2;
   $ok-letters-height: 1.50;
   transform: scale($ok-letters-width,

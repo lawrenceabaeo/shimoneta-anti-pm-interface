@@ -109,7 +109,7 @@
 
 /* line 134, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .my-keys {
-  border-radius: .25px;
+  border-radius: .1px;
   height: 100%;
   margin: 0px 0px;
   vertical-align: middle; }
@@ -118,19 +118,19 @@
 .special-key-1, .special-key-3 {
   width: 29%; }
 
-/* line 153, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 151, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .ok-button {
   width: 42%; }
 
-/* line 158, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 155, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .ok-button-text {
   font-family: "telegrama_render";
   display: inline-block;
   /** OK letters sizing and position**/
-  transform: scale(2, 1.5) translateY(0px);
-  -webkit-transform: scale(2, 1.5) translateY(0px);
-  -moz-transform: scale(2, 1.5) translateY(0px);
-  -ms-transform: scale(2, 1.5) translateY(0px);
-  -o-transform: scale(2, 1.5) translateY(0px); }
+  transform: scale(2, 1.5) translateY(2px);
+  -webkit-transform: scale(2, 1.5) translateY(2px);
+  -moz-transform: scale(2, 1.5) translateY(2px);
+  -ms-transform: scale(2, 1.5) translateY(2px);
+  -o-transform: scale(2, 1.5) translateY(2px); }
 
 /*# sourceMappingURL=my-styles.css.map */
