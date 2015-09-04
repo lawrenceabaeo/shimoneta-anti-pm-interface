@@ -11,7 +11,7 @@
   src: url('../font/AUDIMRG_.ttf') format('truetype');
 }
 /***** SASS stuff *****/
-$main-content-width: 298px;
+$overall-content-width: 298px;
 @mixin debug {
   border: 1px solid red;
 }
@@ -22,7 +22,7 @@ $main-content-width: 298px;
   margin-right: auto;
   margin-top: 6px;
   text-align: center;
-  width: $main-content-width;
+  width: $overall-content-width;
   @include debug; 
 }
 
@@ -34,7 +34,7 @@ $main-content-width: 298px;
 
 .wrap-text-anti-pm-area {
   display: inline-block;
-    $anti-pm-text-width: 1;
+  $anti-pm-text-width: 1;
   $anti-pm-text-height: 1.2;
   transform: scale($anti-pm-text-width,
     $anti-pm-text-height);
@@ -61,6 +61,7 @@ $main-content-width: 298px;
 }
 
 .dark-gray-content-area {
+  position: relative;
   margin-bottom: 15px;
   margin-left: 4px;
   margin-right: 4px;
@@ -79,14 +80,44 @@ $main-content-width: 298px;
 }
 
 .text-remaining-time {
+  font-size: 2em;
+  /** positioning stuff **/
+  position: absolute;
+  // https://teamtreehouse.com/community/centre-align-an-absolute-positioned-element-with-unknown-width
+  margin: auto;
+  top: 52px; left: 0px; bottom: 0px; right: 0px; 
+  // I approximated the 'top' value svisually
+  @include debug;
 }
 
+.countdown-numbers-area{
+  margin-top: 75px;
+  /** numbers sizing **/
+  $countdown-numbers-width: .95;
+  $countdown-numbers-height: 1.10;
+  transform: scale($countdown-numbers-width,
+    $countdown-numbers-height);
+  -webkit-transform: scale($countdown-numbers-width, 
+    $countdown-numbers-height);
+  -moz-transform: scale($countdown-numbers-width,
+    $countdown-numbers-height);
+  -ms-transform: scale($countdown-numbers-width,
+    $countdown-numbers-height); // IE 9+
+  -o-transform: scale($countdown-numbers-width,
+    $countdown-numbers-height);
+  @include debug;
+}
 .text-countdown-numbers {
   font-family: 'AUDIMRG_';
+  font-size: 4.75em;
 }
 
 .bottom-buttons-area {
   height: 40px;
+  width: $overall-content-width;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
   @include debug;
 }
 
