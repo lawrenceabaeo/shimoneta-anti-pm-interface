@@ -52,6 +52,16 @@ $main-content-width: 298px;
   @include debug;
 }
 
+.red-orb {
+  margin-left: 41px; // approximated this one visually
+  margin-top: 28px;
+  position: absolute;
+  border-radius: 50%;
+  height: 196px;
+  width: 205px;
+  @include debug;
+}
+
 .text-remaining-time {
 }
 
