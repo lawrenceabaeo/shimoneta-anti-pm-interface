@@ -132,15 +132,6 @@ $(document).ready(function() {
   timer.onTick(formatAndDisplayer);
   
   // Start listening:
-  document.querySelector('.start').addEventListener('click', 
-    function () { 
-      // console.log("About to trigger timer.start"); // Only called once
-      timer.start(); 
-  });
-  document.querySelector('.stop').addEventListener('click', 
-    function () { 
-      timer.stop();
-  });
   document.querySelector('.ok-button').addEventListener('click', 
     function () { 
       if (timer.running === false) {  
