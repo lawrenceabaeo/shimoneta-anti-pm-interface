@@ -10,11 +10,19 @@
   // http://www.smeltery.net/fonts/audimat-mono?utm_source=fontsquirrel.com&utm_medium=download_link&utm_campaign=Audimat-Mono
   src: url('../font/AUDIMRG_.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: "telegrama_render";
+  // http://yoworks.com/telegrama/index.html?utm_source=fontsquirrel.com&utm_medium=download_link&utm_campaign=Telegrama
+  src: url('../font/telegrama_render.otf') format('opentype');
+}
+
 /***** SASS stuff *****/
 $overall-content-width: 298px;
 @mixin debug {
   border: 1px solid red;
 }
+
 
 /******************************/
 .main-content-area {
@@ -132,4 +140,26 @@ $overall-content-width: 298px;
 
 .ok-button {
   width: 42%;
+}
+
+.ok-button-text {
+  font-family: "telegrama_render";
+  display: inline-block;
+  // using font-size pushes the boundaries of the buttons 
+  // that are to the left and right, will use transform instead
+  
+  /** OK letters sizing and position**/
+  $yAxis-number: 2px;
+  $ok-letters-width: 2;
+  $ok-letters-height: 1.50;
+  transform: scale($ok-letters-width,
+    $ok-letters-height) translateY($yAxis-number);
+  -webkit-transform: scale($ok-letters-width, 
+    $ok-letters-height) translateY($yAxis-number);
+  -moz-transform: scale($ok-letters-width,
+    $ok-letters-height) translateY($yAxis-number);
+  -ms-transform: scale($ok-letters-width,
+    $ok-letters-height) translateY($yAxis-number); // IE 9+
+  -o-transform: scale($ok-letters-width,
+    $ok-letters-height) translateY($yAxis-number);
 }
