@@ -11,6 +11,11 @@
   src: url('../font/AGA-Rasheeq-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: "OPTIEdgar-Extended";
+  // http://www.ffonts.net/OPTIEdgar-Extended.font.download
+  src: url('../font/OPTIEdgar-Extended.otf') format('opentype');
+}
 
 /***** SASS stuff *****/
 $main-content-width: 298px;
@@ -30,17 +35,35 @@ $main-content-width: 298px;
 
 .header-area {
   height: 45px;
+  text-align: left;
   @include debug;
 }
 
+.wrap-text-anti-pm-area {
+  display: inline-block;
+    $anti-pm-text-width: 1;
+  $anti-pm-text-height: 1.2;
+  transform: scale($anti-pm-text-width,
+    $anti-pm-text-height);
+  -webkit-transform: scale($anti-pm-text-width, 
+    $anti-pm-text-height);
+  -moz-transform: scale($anti-pm-text-width,
+    $anti-pm-text-height);
+  -ms-transform: scale($anti-pm-text-width,
+    $anti-pm-text-height); // IE 9+
+  -o-transform: scale($anti-pm-text-width,
+    $anti-pm-text-height);
+}
 .text-anti-pm {
-  font-family: 'AGA-Rasheeq-Regular';
-  font-weight: 100;
-  display: inline;
+  display: inline-block;
+  font-family: 'OPTIEdgar-Extended';
+  font-size: 1.21em;
 }
 
 .x-button {
+  position: absolute;
   height: 31px;
+  top: 17px;
   width: 35px;
 }
 
