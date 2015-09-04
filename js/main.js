@@ -141,6 +141,14 @@ $(document).ready(function() {
     function () { 
       timer.stop();
   });
+  document.querySelector('.ok-button').addEventListener('click', 
+    function () { 
+      if (timer.running === false) {  
+        timer.start();
+      } else {
+        timer.stop();
+      }
+  });
   // End of the 'app' in action
   /******************************************/
   

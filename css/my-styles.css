@@ -15,6 +15,7 @@
 /* line 19, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .device-label {
   font-family: 'AGA-Rasheeq-Regular';
-  font-weight: 100; }
+  font-weight: 100;
+  display: inline-block; }
 
 /*# sourceMappingURL=my-styles.css.map */
