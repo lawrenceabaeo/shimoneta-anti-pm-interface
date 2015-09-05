@@ -41,7 +41,11 @@ body {
 }
 
 .main-content-area {
+  $main-content-border-color: darken(white, 25%);
   background-color: #494B4B;
+  border-top: 1px solid $main-content-border-color;
+  border-left: 1px solid $main-content-border-color;
+  border-radius: 2.5px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 6px;
@@ -80,7 +84,7 @@ body {
 }
 
 .x-button {
-  border-radius: 1px;
+  border-radius: 2.5px;
   background-color: #323232;
   padding: 0px;
   
@@ -122,6 +126,7 @@ body {
 .dark-gray-content-area {
   $dark-gray-content-color: #2F3430;
   background: linear-gradient(to bottom, $dark-gray-content-color, #1E1C1F);
+  border-radius: 2.5px;
   position: relative;
   // margin-bottom: 15px; // whoops this should be for the main area
   margin-left: 4px;
@@ -189,7 +194,10 @@ body {
   padding-top: 0px;
 }
 
+$keys-border-color: darken(white, 25%);
 .my-keys {
+  border-top: 1px solid $keys-border-color;
+  // border-left: 1px solid $main-content-border-color;
   background-color: #241921;
   border-radius: .1px;
   height: 100%;
@@ -202,9 +210,11 @@ body {
 }
 
 .special-key-1 {
+  border-bottom-left-radius: 5px;
 }
 
 .special-key-3 {
+  border-bottom-right-radius: 5px;
 }
 
 .ok-button {
