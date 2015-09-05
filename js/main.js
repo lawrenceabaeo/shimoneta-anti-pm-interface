@@ -133,8 +133,16 @@ $(document).ready(function() {
   
   // Start listening:
   document.querySelector('.ok-button').addEventListener('click', 
-    function () { 
-      if (timer.running === false) {  
+    function () {
+      if (timer.running === false) {
+        timer.start();
+      } else {
+        timer.stop();
+      }
+  });
+  document.querySelector('.dark-gray-content-area').addEventListener('click', 
+    function () {
+      if (timer.running === false) {
         timer.start();
       } else {
         timer.stop();
