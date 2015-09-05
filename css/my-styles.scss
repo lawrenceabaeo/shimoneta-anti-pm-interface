@@ -6,12 +6,6 @@
 }
 
 @font-face {
-  font-family: "AUDIMRG_";
-  // http://www.smeltery.net/fonts/audimat-mono?utm_source=fontsquirrel.com&utm_medium=download_link&utm_campaign=Audimat-Mono
-  src: url('../font/AUDIMRG_.ttf') format('truetype');
-}
-
-@font-face {
   font-family: "telegrama_render";
   // http://yoworks.com/telegrama/index.html?utm_source=fontsquirrel.com&utm_medium=download_link&utm_campaign=Telegrama
   src: url('../font/telegrama_render.otf') format('opentype');
@@ -23,6 +17,12 @@
   // NOTE: the otf that came with this didn't work with Firefox, 
   // so using the ttf instead (which works fine in FF)
   src: url('../font/K22_Spotty_Face.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "larabiefont-free.regular";
+  // http://www.1001fonts.com/larabiefont-free-font.html
+  src: url('../font/larabiefont-free.regular.ttf') format('truetype');
 }
 
 
@@ -155,8 +155,9 @@ $overall-content-width: 298px;
     $countdown-numbers-height);
 }
 .text-countdown-numbers {
-  font-family: 'AUDIMRG_';
-  font-size: 4.75em;
+  font-family: "larabiefont-free.regular";
+  font-size: 4.35em;
+  letter-spacing: -.065em;
 }
 
 .bottom-buttons-area {

@@ -4,16 +4,16 @@
   src: url("../font/OPTIEdgar-Extended.otf") format("opentype"); }
 
 @font-face {
-  font-family: "AUDIMRG_";
-  src: url("../font/AUDIMRG_.ttf") format("truetype"); }
-
-@font-face {
   font-family: "telegrama_render";
   src: url("../font/telegrama_render.otf") format("opentype"); }
 
 @font-face {
   font-family: "K22_Spotty_Face";
   src: url("../font/K22_Spotty_Face.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "larabiefont-free.regular";
+  src: url("../font/larabiefont-free.regular.ttf") format("truetype"); }
 
 /***** SASS stuff *****/
 /******************************/
@@ -112,10 +112,11 @@
 
 /* line 157, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .text-countdown-numbers {
-  font-family: 'AUDIMRG_';
-  font-size: 4.75em; }
+  font-family: "larabiefont-free.regular";
+  font-size: 4.35em;
+  letter-spacing: -.065em; }
 
-/* line 162, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 163, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .bottom-buttons-area {
   height: 40px;
   width: 298px;
@@ -124,22 +125,22 @@
   margin-top: 3px;
   padding-top: 0px; }
 
-/* line 171, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 172, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .my-keys {
   border-radius: .1px;
   height: 100%;
   margin: 0px 0px;
   vertical-align: middle; }
 
-/* line 178, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 179, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .special-key-1, .special-key-3 {
   width: 29%; }
 
-/* line 188, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 189, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .ok-button {
   width: 42%; }
 
-/* line 192, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 193, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .ok-button-text {
   font-family: "telegrama_render";
   display: inline-block;
