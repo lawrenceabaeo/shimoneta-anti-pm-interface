@@ -11,9 +11,13 @@
   font-family: "telegrama_render";
   src: url("../font/telegrama_render.otf") format("opentype"); }
 
+@font-face {
+  font-family: "K22_Spotty_Face";
+  src: url("../font/K22_Spotty_Face.ttf") format("truetype"); }
+
 /***** SASS stuff *****/
 /******************************/
-/* line 28, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 37, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .main-content-area {
   margin-left: auto;
   margin-right: auto;
@@ -22,13 +26,13 @@
   width: 298px;
   border: 1px solid red; }
 
-/* line 37, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 46, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .header-area {
   height: 45px;
   text-align: left;
   border: 1px solid red; }
 
-/* line 43, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 52, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .wrap-text-anti-pm-area {
   display: inline-block;
   transform: scale(1, 1.2);
@@ -37,21 +41,36 @@
   -ms-transform: scale(1, 1.2);
   -o-transform: scale(1, 1.2); }
 
-/* line 58, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 67, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .text-anti-pm {
   display: inline-block;
   font-family: 'OPTIEdgar-Extended';
   font-size: 1.21em; }
 
-/* line 64, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 73, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .x-button {
   border-radius: 1px;
+  padding: 0px;
+  /** positioning **/
   position: absolute;
-  height: 31px;
   top: 17px;
+  height: 31px;
   width: 35px; }
 
-/* line 72, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 84, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+.x-button-text {
+  display: inline-block;
+  /** font stuff **/
+  font-family: "K22_Spotty_Face";
+  font-size: 1.3em;
+  text-align: center;
+  transform: scale(1.35, 1.25) translateY(0px);
+  -webkit-transform: scale(1.35, 1.25) translateY(0px);
+  -moz-transform: scale(1.35, 1.25) translateY(0px);
+  -ms-transform: scale(1.35, 1.25) translateY(0px);
+  -o-transform: scale(1.35, 1.25) translateY(0px); }
+
+/* line 112, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .dark-gray-content-area {
   position: relative;
   margin-bottom: 15px;
@@ -60,7 +79,7 @@
   height: 263px;
   border: 1px solid red; }
 
-/* line 81, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 121, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .red-orb {
   margin-left: 41px;
   margin-top: 28px;
@@ -70,7 +89,7 @@
   width: 205px;
   border: 1px solid red; }
 
-/* line 91, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 131, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .text-remaining-time {
   font-size: 2em;
   /** positioning stuff **/
@@ -82,7 +101,7 @@
   right: 0px;
   border: 1px solid red; }
 
-/* line 102, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 142, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .countdown-numbers-area {
   margin-top: 75px;
   /** numbers sizing **/
@@ -93,12 +112,12 @@
   -o-transform: scale(0.95, 1.1);
   border: 1px solid red; }
 
-/* line 119, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 159, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .text-countdown-numbers {
   font-family: 'AUDIMRG_';
   font-size: 4.75em; }
 
-/* line 124, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 164, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .bottom-buttons-area {
   height: 40px;
   width: 298px;
@@ -107,22 +126,22 @@
   margin-top: 3px;
   padding-top: 0px; }
 
-/* line 134, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 174, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .my-keys {
   border-radius: .1px;
   height: 100%;
   margin: 0px 0px;
   vertical-align: middle; }
 
-/* line 141, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 181, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .special-key-1, .special-key-3 {
   width: 29%; }
 
-/* line 151, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 191, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .ok-button {
   width: 42%; }
 
-/* line 155, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+/* line 195, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .ok-button-text {
   font-family: "telegrama_render";
   display: inline-block;

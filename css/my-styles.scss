@@ -17,6 +17,15 @@
   src: url('../font/telegrama_render.otf') format('opentype');
 }
 
+@font-face {
+  font-family: "K22_Spotty_Face";
+  // http://www.fontspace.com/toto/k22-spotty-face
+  // NOTE: the otf that came with this didn't work with Firefox, 
+  // so using the ttf instead (which works fine in FF)
+  src: url('../font/K22_Spotty_Face.ttf') format('truetype');
+}
+
+
 /***** SASS stuff *****/
 $overall-content-width: 298px;
 @mixin debug {
@@ -63,10 +72,41 @@ $overall-content-width: 298px;
 
 .x-button {
   border-radius: 1px;
+  padding: 0px;
+  
+  /** positioning **/
   position: absolute;
-  height: 31px;
   top: 17px;
+  height: 31px;
   width: 35px;
+}
+
+.x-button-text {
+  display: inline-block;
+  
+  /** font stuff **/
+  font-family: "K22_Spotty_Face";
+  font-size: 1.3em;
+  // font-weight: 900;
+  text-align: center;
+  $yAxis-for-x-button: 0px;
+  $x-button-text-width: 1.35;
+  $x-button-text-height: 1.25;
+  transform: scale($x-button-text-width,
+    $x-button-text-height) 
+    translateY($yAxis-for-x-button);
+  -webkit-transform: scale($x-button-text-width, 
+    $x-button-text-height) 
+    translateY($yAxis-for-x-button);
+  -moz-transform: scale($x-button-text-width,
+    $x-button-text-height) 
+    translateY($yAxis-for-x-button);
+  -ms-transform: scale($x-button-text-width,
+    $x-button-text-height) 
+    translateY($yAxis-for-x-button); // IE 9+
+  -o-transform: scale($x-button-text-width,
+    $x-button-text-height) 
+    translateY($yAxis-for-x-button);
 }
 
 .dark-gray-content-area {
