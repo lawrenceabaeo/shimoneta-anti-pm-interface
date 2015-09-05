@@ -34,19 +34,27 @@ $overall-content-width: 298px;
 
 
 /******************************/
+body {
+  background-color: #D165AA;
+  // color: #929493;
+  color: white;
+}
+
 .main-content-area {
+  background-color: #494B4B;
   margin-left: auto;
   margin-right: auto;
   margin-top: 6px;
+  padding-bottom: 15px;
   text-align: center;
   width: $overall-content-width;
-  @include debug; 
+  // @include debug; 
 }
 
 .header-area {
   height: 45px;
   text-align: left;
-  @include debug;
+  // @include debug;
 }
 
 .wrap-text-anti-pm-area {
@@ -68,10 +76,12 @@ $overall-content-width: 298px;
   display: inline-block;
   font-family: 'OPTIEdgar-Extended';
   font-size: 1.21em;
+  font-weight: 100;
 }
 
 .x-button {
   border-radius: 1px;
+  background-color: #323232;
   padding: 0px;
   
   /** positioning **/
@@ -110,26 +120,36 @@ $overall-content-width: 298px;
 }
 
 .dark-gray-content-area {
+  $dark-gray-content-color: #2F3430;
+  background: linear-gradient(to bottom, $dark-gray-content-color, #1E1C1F);
   position: relative;
-  margin-bottom: 15px;
+  // margin-bottom: 15px; // whoops this should be for the main area
   margin-left: 4px;
   margin-right: 4px;
   height: 263px;
-  @include debug;
+  // @include debug;
+  /** 
+  This is bizarre, this area needs
+  a border, otherwise the boxes get all 
+  messed up
+  **/
+  border: 1px solid $dark-gray-content-color;
 }
 
 .red-orb {
+  background: linear-gradient(to bottom, #1E1D20 65%, #66202C);
   margin-left: 41px; // approximated this one visually
   margin-top: 28px;
   position: absolute;
   border-radius: 50%;
   height: 196px;
   width: 205px;
-  @include debug;
+  // @include debug;
 }
 
 .text-remaining-time {
   font-size: 2em;
+  
   /** positioning stuff **/
   position: absolute;
   // https://teamtreehouse.com/community/centre-align-an-absolute-positioned-element-with-unknown-width
@@ -170,6 +190,7 @@ $overall-content-width: 298px;
 }
 
 .my-keys {
+  background-color: #241921;
   border-radius: .1px;
   height: 100%;
   margin: 0px 0px;
@@ -192,6 +213,7 @@ $overall-content-width: 298px;
 
 .ok-button-text {
   font-family: "telegrama_render";
+  // font-weight: 100; // This font isn't affected by weight
   display: inline-block;
   // using font-size pushes the boundaries of the buttons 
   // that are to the left and right, will use transform instead
