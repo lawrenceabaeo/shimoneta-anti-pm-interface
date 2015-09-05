@@ -136,7 +136,6 @@ $overall-content-width: 298px;
   margin: auto;
   top: 52px; left: 0px; bottom: 0px; right: 0px; 
   // I approximated the 'top' value svisually
-  @include debug;
 }
 
 .countdown-numbers-area{
@@ -154,7 +153,6 @@ $overall-content-width: 298px;
     $countdown-numbers-height); // IE 9+
   -o-transform: scale($countdown-numbers-width,
     $countdown-numbers-height);
-  @include debug;
 }
 .text-countdown-numbers {
   font-family: 'AUDIMRG_';
@@ -168,7 +166,6 @@ $overall-content-width: 298px;
   margin-right: auto;
   margin-top: 3px;
   padding-top: 0px;
-  
 }
 
 .my-keys {
