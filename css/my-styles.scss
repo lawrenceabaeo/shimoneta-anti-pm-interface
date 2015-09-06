@@ -36,8 +36,28 @@ $overall-content-width: 298px;
 /******************************/
 body {
   background-color: #D165AA;
-  // color: #929493;
   color: white;
+}
+
+.cell-phone-edge-wrapper {
+  border: 2px solid lighten(black, 30%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3px;
+  width: $overall-content-width + 14px;
+}
+
+.dark-raspberry-wrapper {
+  background-color: #883456;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6px;
+  width: $overall-content-width + 8px;
 }
 
 .main-content-area {
@@ -48,7 +68,7 @@ body {
   border-radius: 2.5px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 6px;
+  // margin-top: 6px;
   padding-bottom: 15px;
   text-align: center;
   width: $overall-content-width;
@@ -76,6 +96,7 @@ body {
   -o-transform: scale($anti-pm-text-width,
     $anti-pm-text-height);
 }
+
 .text-anti-pm {
   display: inline-block;
   font-family: 'OPTIEdgar-Extended';
