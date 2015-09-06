@@ -131,10 +131,13 @@ $(document).ready(function() {
   // and the timer object's IIFE will run functions from that Array
   timer.onTick(formatAndDisplayer);
   
+  var soundEffect = $(".sound-effect")[0];
+
   // Start listening:
   document.querySelector('.ok-button').addEventListener('click', 
     function () {
       if (timer.running === false) {
+        soundEffect.play();
         timer.start();
       } else {
         timer.stop();
@@ -143,6 +146,7 @@ $(document).ready(function() {
   document.querySelector('.dark-gray-content-area').addEventListener('click', 
     function () {
       if (timer.running === false) {
+        soundEffect.play();
         timer.start();
       } else {
         timer.stop();
