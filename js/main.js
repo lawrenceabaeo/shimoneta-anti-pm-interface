@@ -116,6 +116,10 @@ $(document).ready(function() {
   var durationInSeconds = 3*60;
   var timer = new CountDownTimer(durationInSeconds * 1000),
       objectThatHasTimeProps = CountDownTimer.parseFromMilliseconds(durationInSeconds * 1000);
+  var soundEffect = $(".sound-effect")[0];
+  var instructionsMessage = 
+  "Press 'OK', or press anywhere on the numbers to start and stop the countdown. \n\nPress 'X' to reset the time.";
+ 
   function formatAndDisplayer(minutes, seconds, centiseconds) {
     // console.log("Updating inside formatAndDisplayer"); // This is called initially AND with each countdown
     minutes = minutes;
@@ -134,9 +138,7 @@ $(document).ready(function() {
   // the onTick method then places that function in an Array,
   // and the timer object's IIFE will run functions from that Array
   timer.onTick(formatAndDisplayer);
-  
-  var soundEffect = $(".sound-effect")[0];
-
+   
   // Start listening:
   document.querySelector('.ok-button').addEventListener('click', 
     function () {
@@ -166,6 +168,12 @@ $(document).ready(function() {
                      objectThatHasTimeProps.seconds, 
                      objectThatHasTimeProps.centiseconds);
   });
+  
+  document.querySelector('.special-key-3').addEventListener('click', 
+    function () {
+      alert(instructionsMessage);
+  });
+  
   // End of the 'app' in action
   /******************************************/
   
