@@ -100,6 +100,10 @@ $(document).ready(function() {
     return !this.running;
   };
   
+  CountDownTimer.prototype.reset = function() {
+    this.stop();
+  };
+  
   // End of all the Countdown Timer stuff
   /******************************************/
   
@@ -151,6 +155,15 @@ $(document).ready(function() {
       } else {
         timer.stop();
       }
+  });
+  // Stop and reset the timer if 'x' button is pushed
+  // might want to refactor some of this code at a later date
+  document.querySelector('.x-button').addEventListener('click', 
+    function () {
+      timer.stop();
+      formatAndDisplayer(objectThatHasTimeProps.minutes, 
+                     objectThatHasTimeProps.seconds, 
+                     objectThatHasTimeProps.centiseconds);
   });
   // End of the 'app' in action
   /******************************************/
