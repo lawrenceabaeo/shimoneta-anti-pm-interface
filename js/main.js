@@ -161,6 +161,7 @@ $(document).ready(function() {
   document.querySelector('.x-button').addEventListener('click', 
     function () {
       timer.stop();
+      timer.remainingTimeThatWasLeftWhenPaused = undefined;
       formatAndDisplayer(objectThatHasTimeProps.minutes, 
                      objectThatHasTimeProps.seconds, 
                      objectThatHasTimeProps.centiseconds);
