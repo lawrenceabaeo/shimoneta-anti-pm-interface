@@ -34,6 +34,20 @@ $overall-content-width: 298px;
   border: 1px solid red;
 }
 
+@mixin scut-link-unstyled { // http://codepen.io/lowercase/pen/dBFxm
+  &, &:visited, &:hover, &:active {
+    font-style: inherit;
+    color: inherit;
+    background-color: transparent;
+    font-size: inherit;
+    text-decoration: none;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-family: inherit;
+  }
+}
+
 
 /******************************/
 body {
@@ -105,6 +119,10 @@ body {
   font-size: 1.21em;
   font-weight: 100;
   letter-spacing: .05em;
+}
+
+.link-anti-pm {
+  @include scut-link-unstyled;
 }
 
 .x-button {
