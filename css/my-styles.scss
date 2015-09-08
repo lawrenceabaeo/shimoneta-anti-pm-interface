@@ -27,6 +27,8 @@
 
 
 /***** SASS stuff *****/
+$physical-cell-phone-width: 375px;
+$physical-cell-phone-border-color: lighten(black, 30%);
 $overall-content-width: 298px;
 @mixin debug {
   border: 1px solid red;
@@ -40,7 +42,7 @@ body {
 }
 
 .cell-phone-edge-wrapper {
-  border: 2px solid lighten(black, 30%);
+  border: 2px solid $physical-cell-phone-border-color;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 5px;
@@ -264,4 +266,14 @@ $keys-border-color: darken(white, 25%);
     $ok-letters-height) translateY($yAxis-number); // IE 9+
   -o-transform: scale($ok-letters-width,
     $ok-letters-height) translateY($yAxis-number);
+}
+
+.flip-phone-crease {
+  background: $physical-cell-phone-border-color;
+  border: 0px;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 55px;
+  width: $physical-cell-phone-width;
 }
