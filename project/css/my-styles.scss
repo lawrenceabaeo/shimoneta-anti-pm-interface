@@ -51,8 +51,21 @@ $overall-content-width: 298px;
 
 /******************************/
 body {
-  background-color: #D165AA;
+  background-color: white;
   color: white;
+}
+
+.cell-phone-ear-speaker {
+  height: 0px;
+  margin: 0 0;
+}
+
+.cell-phone-far-edge-wrapper {
+  background-color: #D165AA;
+  border: 2px solid $physical-cell-phone-border-color;
+  margin-left: auto;
+  margin-right: auto;
+  width: $physical-cell-phone-width;
 }
 
 .cell-phone-edge-wrapper {
@@ -293,5 +306,60 @@ $keys-border-color: darken(white, 25%);
   margin-left: auto;
   margin-right: auto;
   margin-top: 55px;
+  margin-bottom: 58px;
   width: $physical-cell-phone-width;
+}
+
+@media only screen and (min-width: 700px) {
+  .cell-phone-ear-speaker {
+    height: 75px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #D165AA;
+    border: 2px solid $physical-cell-phone-border-color;
+    border-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: $physical-cell-phone-width;
+  }
+  .cell-phone-speaker-cutout-wrapper {
+    text-align: center; 
+  }
+  .speaker-cutout {
+    border: 1px solid $physical-cell-phone-border-color;
+    display: inline-block;
+    height: 15px;
+    margin-top: 15px;
+  }
+  .speaker-cutout-left {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 48px;
+  }
+  .speaker-cutout-right {
+    border-left: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 84px;
+  }  
+  .cell-phone-far-edge-wrapper {
+   padding-top: 27px;
+  }
+  .cell-phone-status-bar {
+    background-color: #281A24;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: $overall-content-width + 8px;
+  }
+  .dark-raspberry-wrapper {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .x-button {
+    top: 167px;
+  }
 }
