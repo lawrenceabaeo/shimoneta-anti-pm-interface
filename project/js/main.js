@@ -174,6 +174,12 @@ $(document).ready(function() {
       alert(instructionsMessage);
   });
   
+  document.querySelector('.special-key-1').addEventListener('click', 
+    function () {
+      var url = "http://lawrenceabaeo.github.io/shimoneta-anti-pm-interface";
+      window.open(url);
+  });
+  
   // End of the 'app' in action
   /******************************************/
   
