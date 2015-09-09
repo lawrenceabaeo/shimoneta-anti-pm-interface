@@ -1,0 +1,297 @@
+/***** Fonts *****/
+@font-face {
+  font-family: "OPTIEdgar-Extended";
+  // http://www.ffonts.net/OPTIEdgar-Extended.font.download
+  src: url('../font/OPTIEdgar-Extended.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "telegrama_render";
+  // http://yoworks.com/telegrama/index.html?utm_source=fontsquirrel.com&utm_medium=download_link&utm_campaign=Telegrama
+  src: url('../font/telegrama_render.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "K22_Spotty_Face";
+  // http://www.fontspace.com/toto/k22-spotty-face
+  // NOTE: the otf that came with this didn't work with Firefox, 
+  // so using the ttf instead (which works fine in FF)
+  src: url('../font/K22_Spotty_Face.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "larabiefont-free.regular";
+  // http://www.1001fonts.com/larabiefont-free-font.html
+  src: url('../font/larabiefont-free.regular.ttf') format('truetype');
+}
+
+
+/***** SASS stuff *****/
+$physical-cell-phone-width: 375px;
+$physical-cell-phone-border-color: lighten(black, 30%);
+$overall-content-width: 298px;
+@mixin debug {
+  border: 1px solid red;
+}
+
+@mixin scut-link-unstyled { // http://codepen.io/lowercase/pen/dBFxm
+  &, &:visited, &:hover, &:active {
+    font-style: inherit;
+    color: inherit;
+    background-color: transparent;
+    font-size: inherit;
+    text-decoration: none;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-family: inherit;
+  }
+}
+
+
+/******************************/
+body {
+  background-color: #D165AA;
+  color: white;
+}
+
+.cell-phone-edge-wrapper {
+  border: 2px solid $physical-cell-phone-border-color;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3px;
+  width: $overall-content-width + 14px;
+}
+
+.dark-raspberry-wrapper {
+  background-color: #883456;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6px;
+  width: $overall-content-width + 8px;
+}
+
+.main-content-area {
+  $main-content-border-color: darken(white, 25%);
+  background-color: #494B4B;
+  border-top: 1px solid $main-content-border-color;
+  border-left: 1px solid $main-content-border-color;
+  border-radius: 2.5px;
+  margin-left: auto;
+  margin-right: auto;
+  // margin-top: 6px;
+  padding-bottom: 15px;
+  text-align: center;
+  width: $overall-content-width;
+  // @include debug; 
+}
+
+.header-area {
+  height: 45px;
+  text-align: left;
+  // @include debug;
+}
+
+.wrap-text-anti-pm-area {
+  display: inline-block;
+  $anti-pm-text-width: 1;
+  $anti-pm-text-height: 1.2;
+  transform: scale($anti-pm-text-width,
+    $anti-pm-text-height);
+  -webkit-transform: scale($anti-pm-text-width, 
+    $anti-pm-text-height);
+  -moz-transform: scale($anti-pm-text-width,
+    $anti-pm-text-height);
+  -ms-transform: scale($anti-pm-text-width,
+    $anti-pm-text-height); // IE 9+
+  -o-transform: scale($anti-pm-text-width,
+    $anti-pm-text-height);
+}
+
+.text-anti-pm {
+  display: inline-block;
+  font-family: 'OPTIEdgar-Extended';
+  font-size: 1.21em;
+  font-weight: 100;
+  letter-spacing: .05em;
+}
+
+.link-anti-pm {
+  @include scut-link-unstyled;
+}
+
+.x-button {
+  border-radius: 2.5px;
+  background-color: #323232;
+  padding: 0px;
+  
+  /** positioning **/
+  position: absolute;
+  top: 22px;
+  height: 31px;
+  width: 35px;
+}
+
+.x-button-text {
+  display: inline-block;
+  
+  /** font stuff **/
+  font-family: "K22_Spotty_Face";
+  font-size: 1.3em;
+  // font-weight: 900;
+  text-align: center;
+  $yAxis-for-x-button: 0px;
+  $x-button-text-width: 1.35;
+  $x-button-text-height: 1.25;
+  transform: scale($x-button-text-width,
+    $x-button-text-height) 
+    translateY($yAxis-for-x-button);
+  -webkit-transform: scale($x-button-text-width, 
+    $x-button-text-height) 
+    translateY($yAxis-for-x-button);
+  -moz-transform: scale($x-button-text-width,
+    $x-button-text-height) 
+    translateY($yAxis-for-x-button);
+  -ms-transform: scale($x-button-text-width,
+    $x-button-text-height) 
+    translateY($yAxis-for-x-button); // IE 9+
+  -o-transform: scale($x-button-text-width,
+    $x-button-text-height) 
+    translateY($yAxis-for-x-button);
+}
+
+.dark-gray-content-area {
+  $dark-gray-content-color: #2F3430;
+  background: linear-gradient(to bottom, $dark-gray-content-color, #1E1C1F);
+  border-radius: 2.5px;
+  position: relative;
+  // margin-bottom: 15px; // whoops this should be for the main area
+  margin-left: 4px;
+  margin-right: 4px;
+  height: 263px;
+  // @include debug;
+  /** 
+  This is bizarre, this area needs
+  a border, otherwise the boxes get all 
+  messed up
+  **/
+  border: 1px solid $dark-gray-content-color;
+}
+
+.red-orb {
+  background: linear-gradient(to bottom, #1E1D20 65%, #66202C);
+  margin-left: 41px; // approximated this one visually
+  margin-top: 28px;
+  position: absolute;
+  border-radius: 50%;
+  height: 196px;
+  width: 205px;
+  // @include debug;
+}
+
+.text-remaining-time {
+  font-size: 2em;
+  
+  /** positioning stuff **/
+  position: absolute;
+  // https://teamtreehouse.com/community/centre-align-an-absolute-positioned-element-with-unknown-width
+  margin: auto;
+  top: 52px; left: 0px; bottom: 0px; right: 0px; 
+  // I approximated the 'top' value svisually
+}
+
+.countdown-numbers-area{
+  margin-top: 75px;
+  /** numbers sizing **/
+  $countdown-numbers-width: .95;
+  $countdown-numbers-height: 1.10;
+  transform: scale($countdown-numbers-width,
+    $countdown-numbers-height);
+  -webkit-transform: scale($countdown-numbers-width, 
+    $countdown-numbers-height);
+  -moz-transform: scale($countdown-numbers-width,
+    $countdown-numbers-height);
+  -ms-transform: scale($countdown-numbers-width,
+    $countdown-numbers-height); // IE 9+
+  -o-transform: scale($countdown-numbers-width,
+    $countdown-numbers-height);
+}
+.text-countdown-numbers {
+  font-family: "larabiefont-free.regular";
+  font-size: 4.35em;
+  letter-spacing: -.065em;
+}
+
+.bottom-buttons-area {
+  height: 40px;
+  width: $overall-content-width;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  padding-top: 0px;
+}
+
+$keys-border-color: darken(white, 25%);
+.my-keys {
+  border-top: 1px solid $keys-border-color;
+  // border-left: 1px solid $main-content-border-color;
+  background-color: #241921;
+  border-radius: .1px;
+  height: 100%;
+  margin: 0px 0px;
+  vertical-align: middle;
+}
+
+.special-key-1, .special-key-3 { 
+  width: 29%;
+}
+
+.special-key-1 {
+  border-bottom-left-radius: 5px;
+}
+
+.special-key-3 {
+  border-bottom-right-radius: 5px;
+}
+
+.ok-button {
+  width: 42%;
+}
+
+.ok-button-text {
+  font-family: "telegrama_render";
+  // font-weight: 100; // This font isn't affected by weight
+  display: inline-block;
+  // using font-size pushes the boundaries of the buttons 
+  // that are to the left and right, will use transform instead
+  
+    /** OK letters sizing and position**/
+  $yAxis-number: 2px;
+  $ok-letters-width: 2;
+  $ok-letters-height: 1.50;
+  transform: scale($ok-letters-width,
+    $ok-letters-height) translateY($yAxis-number);
+  -webkit-transform: scale($ok-letters-width, 
+    $ok-letters-height) translateY($yAxis-number);
+  -moz-transform: scale($ok-letters-width,
+    $ok-letters-height) translateY($yAxis-number);
+  -ms-transform: scale($ok-letters-width,
+    $ok-letters-height) translateY($yAxis-number); // IE 9+
+  -o-transform: scale($ok-letters-width,
+    $ok-letters-height) translateY($yAxis-number);
+}
+
+.flip-phone-crease {
+  background: $physical-cell-phone-border-color;
+  border: 0px;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 55px;
+  width: $physical-cell-phone-width;
+}
