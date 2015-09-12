@@ -36,6 +36,11 @@ $overall-content-width: 298px;
   border: 1px solid red;
 }
 
+@mixin bottom-edge-rounding {
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
 @mixin cell-phone-bkg {
   background-image: linear-gradient(to right, #D165AA 0%, #E3A2CC 25%, #D165AA 75%, #D165AA 100%);
 }
@@ -316,16 +321,72 @@ $keys-border-color: darken(white, 25%);
   width: $physical-cell-phone-width;
 }
 
-@media only screen and (min-width: 700px) {
+.full-hinge-area {
+  background-image: linear-gradient(to bottom, #D165AA 0%, #E8B2D4 10%, #D165AA 25%, #BC5A99 77.5%, #D165AA 100%);
+  @include bottom-edge-rounding;
+  margin-top: 55px;
+}
+
+.hinge-portion-b-area {
+  // border: 2px solid black;
+  background-image: linear-gradient(to bottom, #683255 0%, #E8B2D4 5%, #D165AA 55%, #bc5a99 77.5%, #D165AA 100%);
+  border-right: solid #683255;
+  border-left: solid #683255;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 195px;
+}
+
+/***** iphone 4 and 5 only *****/
+@media only screen and (min-height: 450px) {
   .cell-phone-far-edge-wrapper {
     border: 2px solid $physical-cell-phone-border-color;
+    @include bottom-edge-rounding;
+    padding-top: 27px;
+    // width: $physical-cell-phone-width;
+  }
+  
+  .x-button { // ick, I'm really hating this absolute positioning
+    top: 50px;
+  }
+}
+/******************************/
+
+
+/***** iphone 6 only *****/
+@media only screen and (min-height: 558px) {
+  .cell-phone-ear-speaker {
+    height: 50px;
+    // border-top-left-radius: 20px;
+    // border-top-right-radius: 20px;
+    @include cell-phone-bkg;
+    border: 2px solid $physical-cell-phone-border-color;
+    border-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    // width: $physical-cell-phone-width;
+  }
+  
+  .x-button { // ick, I'm really hating this absolute positioning
+    top: 102px;
+  }
+}
+/******************************/
+
+
+@media only screen and (min-width: 700px) {
+  
+  .cell-phone-far-edge-wrapper {
+    border: 2px solid $physical-cell-phone-border-color;
+    @include bottom-edge-rounding;
     padding-top: 27px;
     width: $physical-cell-phone-width;
   }
+  
   .cell-phone-edge-wrapper {
     border: 2px solid $physical-cell-phone-border-color;
     border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin-left: auto;
