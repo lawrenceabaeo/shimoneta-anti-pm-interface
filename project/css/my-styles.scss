@@ -29,9 +29,15 @@
 /***** SASS stuff *****/
 $physical-cell-phone-width: 375px;
 $physical-cell-phone-border-color: lighten(black, 30%);
+$physical-cell-phone-color: #D165AA;
 $overall-content-width: 298px;
+
 @mixin debug {
   border: 1px solid red;
+}
+
+@mixin cell-phone-bkg {
+  background-image: linear-gradient(to right, #D165AA 0%, #E3A2CC 25%, #D165AA 75%, #D165AA 100%);
 }
 
 @mixin scut-link-unstyled { // http://codepen.io/lowercase/pen/dBFxm
@@ -50,8 +56,11 @@ $overall-content-width: 298px;
 
 
 /******************************/
+html {
+  height: 100%;
+}
 body {
-  background-color: white;
+  background-image: linear-gradient(to bottom right, #3A3D3E 0%, #647F87 50%, #3A3D3E 100%);
   color: white;
 }
 
@@ -61,11 +70,10 @@ body {
 }
 
 .cell-phone-far-edge-wrapper {
-  background-color: #D165AA;
-  border: 2px solid $physical-cell-phone-border-color;
+  @include cell-phone-bkg;
+  border: 1px solid $physical-cell-phone-color; // need a border so the inner content can stretch down
   margin-left: auto;
   margin-right: auto;
-  width: $physical-cell-phone-width;
 }
 
 .cell-phone-edge-wrapper {
@@ -156,7 +164,6 @@ body {
   /** font stuff **/
   font-family: "K22_Spotty_Face";
   font-size: 1.3em;
-  // font-weight: 900;
   text-align: center;
   $yAxis-for-x-button: 0px;
   $x-button-text-width: 1.35;
@@ -252,7 +259,6 @@ body {
 $keys-border-color: darken(white, 25%);
 .my-keys {
   border-top: 1px solid $keys-border-color;
-  // border-left: 1px solid $main-content-border-color;
   background-color: #241921;
   border-radius: .1px;
   height: 100%;
@@ -311,11 +317,28 @@ $keys-border-color: darken(white, 25%);
 }
 
 @media only screen and (min-width: 700px) {
+  .cell-phone-far-edge-wrapper {
+    border: 2px solid $physical-cell-phone-border-color;
+    padding-top: 27px;
+    width: $physical-cell-phone-width;
+  }
+  .cell-phone-edge-wrapper {
+    border: 2px solid $physical-cell-phone-border-color;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3px;
+    width: $overall-content-width + 14px;
+  }
+  
   .cell-phone-ear-speaker {
     height: 75px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    background-color: #D165AA;
+    @include cell-phone-bkg;
     border: 2px solid $physical-cell-phone-border-color;
     border-bottom: 0px;
     margin-left: auto;
@@ -327,25 +350,24 @@ $keys-border-color: darken(white, 25%);
     text-align: center; 
   }
   .speaker-cutout {
-    border: 1px solid $physical-cell-phone-border-color;
+    border: 1px solid darken($physical-cell-phone-color, 10%);
     display: inline-block;
     height: 15px;
     margin-top: 15px;
   }
   .speaker-cutout-left {
+    background-image: linear-gradient(to bottom, #383838 0%, #4E4E4E 50%, #4E4E4E 76%, #383838 87%, #4E4E4E 100%);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     width: 48px;
   }
   .speaker-cutout-right {
+    background-image: linear-gradient(to bottom, #D165AA 0%, #E3A2CC 50%, #D165AA 100%);
     border-left: 0px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     width: 84px;
   }  
-  .cell-phone-far-edge-wrapper {
-   padding-top: 27px;
-  }
   .cell-phone-status-bar {
     background-color: #281A24;
     border-top-left-radius: 5px;
