@@ -254,22 +254,28 @@ body {
   margin-right: auto;
   width: 195px; }
 
+/* line 341, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+.hand {
+  position: absolute;
+  top: 200px;
+  right: 15px; }
+
 /***** iphone 4 and 5 only *****/
 @media only screen and (min-height: 450px) {
-  /* line 343, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+  /* line 349, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
   .cell-phone-far-edge-wrapper {
     border: 2px solid #4d4d4d;
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
     padding-top: 27px; }
-  /* line 350, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+  /* line 356, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
   .x-button {
     top: 50px; } }
 
 /******************************/
 /***** iphone 6 only *****/
 @media only screen and (min-height: 558px) {
-  /* line 359, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+  /* line 365, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
   .cell-phone-ear-speaker {
     height: 50px;
     background-image: linear-gradient(to right, #D165AA 0%, #E3A2CC 25%, #D165AA 75%, #D165AA 100%);
@@ -277,20 +283,20 @@ body {
     border-bottom: 0px;
     margin-left: auto;
     margin-right: auto; }
-  /* line 371, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+  /* line 377, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
   .x-button {
     top: 102px; } }
 
 /******************************/
 @media only screen and (min-width: 700px) {
-  /* line 380, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+  /* line 386, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
   .cell-phone-far-edge-wrapper {
     border: 2px solid #4d4d4d;
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
     padding-top: 27px;
     width: 375px; }
-  /* line 387, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+  /* line 393, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
   .cell-phone-edge-wrapper {
     border: 2px solid #4d4d4d;
     border-bottom-right-radius: 10px;
@@ -300,7 +306,7 @@ body {
     margin-right: auto;
     padding-top: 3px;
     width: 312px; }
-  /* line 398, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+  /* line 404, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
   .cell-phone-ear-speaker {
     height: 75px;
     border-top-left-radius: 20px;
@@ -312,29 +318,29 @@ body {
     margin-right: auto;
     margin-top: 20px;
     width: 375px; }
-  /* line 410, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+  /* line 416, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
   .cell-phone-speaker-cutout-wrapper {
     text-align: center; }
-  /* line 413, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+  /* line 419, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
   .speaker-cutout {
     border: 1px solid #c53e94;
     display: inline-block;
     height: 15px;
     margin-top: 15px; }
-  /* line 419, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+  /* line 425, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
   .speaker-cutout-left {
     background-image: linear-gradient(to bottom, #383838 0%, #4E4E4E 50%, #4E4E4E 76%, #383838 87%, #4E4E4E 100%);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     width: 48px; }
-  /* line 425, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+  /* line 431, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
   .speaker-cutout-right {
     background-image: linear-gradient(to bottom, #D165AA 0%, #E3A2CC 50%, #D165AA 100%);
     border-left: 0px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     width: 84px; }
-  /* line 432, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+  /* line 438, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
   .cell-phone-status-bar {
     background-color: #281A24;
     border-top-left-radius: 5px;
@@ -343,11 +349,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 306px; }
-  /* line 441, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+  /* line 447, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
   .dark-raspberry-wrapper {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px; }
-  /* line 445, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
+  /* line 451, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
   .x-button {
     top: 167px; } }
 
