@@ -338,6 +338,12 @@ $keys-border-color: darken(white, 25%);
   width: 195px;
 }
 
+.hand {
+  position: absolute;
+  top: 200px;
+  right: 15px;
+}
+
 /***** iphone 4 and 5 only *****/
 @media only screen and (min-height: 450px) {
   .cell-phone-far-edge-wrapper {
