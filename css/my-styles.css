@@ -224,7 +224,7 @@ body {
 
 /* line 303, /Users/lawrenceabaeo/code/shimoneta-anti-pm-interface/css/my-styles.scss */
 .ok-button-text {
-  font-family: "telegrama_render";
+  font-family: "telegramarender";
   display: inline-block;
   /** OK letters sizing and position**/
   transform: scale(2, 1.5) translateY(2px);
